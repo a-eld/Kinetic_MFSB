@@ -311,7 +311,6 @@ ylabel(ax,'$v$', ...
     'Rotation',0);
 
 ax.ZColor = 'none';
-set(ax, 'XTick', [], 'YTick', [])
 
 drawnow;
 
@@ -335,7 +334,10 @@ ax.YLabel.HorizontalAlignment = 'center';
 
  else
 
-
+    set(ax, ...
+        'XTick',[], ...
+        'YTick',[], ...
+        'ZTick',[]);
 
     ax.XColor = 'none';
     ax.YColor = 'none';

@@ -335,10 +335,7 @@ ax.YLabel.HorizontalAlignment = 'center';
 
  else
 
-    set(ax, ...
-        'XTick',[], ...
-        'YTick',[], ...
-        'ZTick',[]);
+
 
     ax.XColor = 'none';
     ax.YColor = 'none';

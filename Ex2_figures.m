@@ -928,9 +928,9 @@ J_INT = sum(timeWeights.*J_INT_time)*dt;
 J_SB  = sum(timeWeights.*J_SB_time)*dt;
 J_REF = sum(timeWeights.*J_REF_time)*dt;
 
-fprintf('Cucker--Smale candidate cost                = %.8e\n',J_INT);
-fprintf('Cost of non-interacting bridge              = %.8e\n',J_SB);
-fprintf('Cost of feasible interacting reference (baseline)     = %.8e\n',J_REF);
+fprintf('Cucker--Smale candidate energy                = %.8e\n',J_INT);
+fprintf('Energy of non-interacting bridge              = %.8e\n',J_SB);
+fprintf('Energy of feasible interacting reference (baseline)     = %.8e\n',J_REF);
 fprintf('Candidate minus feasible reference          = %.8e\n',J_INT - J_REF);
 
 fig = figure;
